@@ -1086,6 +1086,7 @@ static struct platform_device ssp_spi_device = {
     .name           =       DEVICE_NAME,
     .id             =       1, // bus 1
     .num_resources  =       ARRAY_SIZE(ssp_1_resource),
+    .resource       =       ssp_1_resource,
     .dev            =       {
         .coherent_dma_mask  =   DMA_BIT_MASK(32),
         .release            =   ssp_device_release,
